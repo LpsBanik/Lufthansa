@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="Manual/None" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1510" minimumToolsVersion="Automatic">
+    <entity name="CDAirport" representedClassName="CDAirport" syncable="YES">
+        <attribute name="airportCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="airportName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="CDCity" representedClassName="CDCity" syncable="YES">
+        <attribute name="cityCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDCountry" representedClassName="CDCountry" syncable="YES">
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDCountry" positionX="-117" positionY="-72" width="128" height="73"/>
+        <element name="CDCity" positionX="-117" positionY="9" width="128" height="73"/>
+        <element name="CDAirport" positionX="-117" positionY="90" width="128" height="133"/>
+    </elements>
+</model>

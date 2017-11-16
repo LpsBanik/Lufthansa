@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32023CCD1FBD9EF900A8560C /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 32023CCC1FBD9EF900A8560C /* Country.m */; };
+		3212ACC11FB1DB6600E7333E /* CDCity.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212ACB61FB1DB6600E7333E /* CDCity.m */; };
+		3212ACC21FB1DB6600E7333E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212ACB81FB1DB6600E7333E /* City.m */; };
+		3212ACC31FB1DB6600E7333E /* CDAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212ACBA1FB1DB6600E7333E /* CDAirport.m */; };
+		3212ACC41FB1DB6600E7333E /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212ACBC1FB1DB6600E7333E /* Airport.m */; };
+		3212ACC61FB1DB6600E7333E /* CDCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3212ACC01FB1DB6600E7333E /* CDCountry.m */; };
+		323BDDD11FAF5E1900938934 /* AccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 323BDDD01FAF5E1900938934 /* AccessToken.m */; };
+		323DDA3D1FAB4374004991B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA3C1FAB4374004991B0 /* main.m */; };
+		323DDA401FAB4374004991B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA3F1FAB4374004991B0 /* AppDelegate.m */; };
+		323DDA461FAB4374004991B0 /* LufthansaApplication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323DDA441FAB4374004991B0 /* LufthansaApplication.storyboard */; };
+		323DDA491FAB4374004991B0 /* LufthansaApplication.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA471FAB4374004991B0 /* LufthansaApplication.xcdatamodeld */; };
+		323DDA4B1FAB4374004991B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 323DDA4A1FAB4374004991B0 /* Assets.xcassets */; };
+		323DDA4E1FAB4374004991B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 323DDA4C1FAB4374004991B0 /* LaunchScreen.storyboard */; };
+		323DDA591FAB4374004991B0 /* LufthansaApplicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA581FAB4374004991B0 /* LufthansaApplicationUITests.m */; };
+		323DDA881FAB4596004991B0 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA671FAB4596004991B0 /* AFHTTPSessionManager.m */; };
+		323DDA891FAB4596004991B0 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA6A1FAB4596004991B0 /* AFNetworkReachabilityManager.m */; };
+		323DDA8A1FAB4596004991B0 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA6C1FAB4596004991B0 /* AFSecurityPolicy.m */; };
+		323DDA8B1FAB4596004991B0 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA6E1FAB4596004991B0 /* AFURLRequestSerialization.m */; };
+		323DDA8C1FAB4596004991B0 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA701FAB4596004991B0 /* AFURLResponseSerialization.m */; };
+		323DDA8D1FAB4596004991B0 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA721FAB4596004991B0 /* AFURLSessionManager.m */; };
+		323DDA8E1FAB4596004991B0 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA751FAB4596004991B0 /* AFAutoPurgingImageCache.m */; };
+		323DDA8F1FAB4596004991B0 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA771FAB4596004991B0 /* AFImageDownloader.m */; };
+		323DDA901FAB4596004991B0 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA791FAB4596004991B0 /* AFNetworkActivityIndicatorManager.m */; };
+		323DDA911FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA7B1FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.m */; };
+		323DDA921FAB4596004991B0 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA7D1FAB4596004991B0 /* UIButton+AFNetworking.m */; };
+		323DDA931FAB4596004991B0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA801FAB4596004991B0 /* UIImageView+AFNetworking.m */; };
+		323DDA941FAB4596004991B0 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA831FAB4596004991B0 /* UIProgressView+AFNetworking.m */; };
+		323DDA951FAB4596004991B0 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA851FAB4596004991B0 /* UIRefreshControl+AFNetworking.m */; };
+		323DDA961FAB4596004991B0 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDA871FAB4596004991B0 /* UIWebView+AFNetworking.m */; };
+		323DDAD31FAC763A004991B0 /* BaseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDAD21FAC763A004991B0 /* BaseDataManager.m */; };
+		323DDAD61FAC92E1004991B0 /* CountriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDAD51FAC92E1004991B0 /* CountriesViewController.m */; };
+		323DDAD91FAC92F0004991B0 /* CitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDAD81FAC92F0004991B0 /* CitiesViewController.m */; };
+		323DDADC1FAC92FF004991B0 /* AirportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDADB1FAC92FF004991B0 /* AirportsViewController.m */; };
+		323DDADF1FAC9990004991B0 /* BaseDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDADE1FAC9990004991B0 /* BaseDataViewController.m */; };
+		323DDB191FAE20E4004991B0 /* ServerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DDB181FAE20E4004991B0 /* ServerManager.m */; };
+		323ECE551FB0AC91007384A7 /* AirportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 323ECE541FB0AC91007384A7 /* AirportTableViewCell.m */; };
+		323EFB631FB33F2C00F4485E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 323EFB621FB33F2C00F4485E /* MapViewController.m */; };
+		325D4F411FB857550034E108 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325D4F401FB857550034E108 /* CoreData.framework */; };
+		93A230BF0C62AAA879541BF5 /* Pods_LufthansaApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F971AA671F41CE58631C602 /* Pods_LufthansaApplication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323DDA551FAB4374004991B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 323DDA301FAB4374004991B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 323DDA371FAB4374004991B0;
+			remoteInfo = LufthansaApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2904000CEC5FCD7B86BA8C3B /* Pods-LufthansaApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaApplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaApplication/Pods-LufthansaApplication.release.xcconfig"; sourceTree = "<group>"; };
+		2AFEEABDB97AD4B9439274CF /* Pods-LufthansaApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LufthansaApplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LufthansaApplication/Pods-LufthansaApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		32023CCB1FBD9EF900A8560C /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		32023CCC1FBD9EF900A8560C /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		3212ACB51FB1DB6600E7333E /* CDCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCity.h; sourceTree = "<group>"; };
+		3212ACB61FB1DB6600E7333E /* CDCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCity.m; sourceTree = "<group>"; };
+		3212ACB71FB1DB6600E7333E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		3212ACB81FB1DB6600E7333E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		3212ACB91FB1DB6600E7333E /* CDAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAirport.h; sourceTree = "<group>"; };
+		3212ACBA1FB1DB6600E7333E /* CDAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAirport.m; sourceTree = "<group>"; };
+		3212ACBB1FB1DB6600E7333E /* Airport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		3212ACBC1FB1DB6600E7333E /* Airport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		3212ACBF1FB1DB6600E7333E /* CDCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDCountry.h; sourceTree = "<group>"; };
+		3212ACC01FB1DB6600E7333E /* CDCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDCountry.m; sourceTree = "<group>"; };
+		323BDDCF1FAF5E1900938934 /* AccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessToken.h; sourceTree = "<group>"; };
+		323BDDD01FAF5E1900938934 /* AccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessToken.m; sourceTree = "<group>"; };
+		323DDA381FAB4374004991B0 /* LufthansaApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LufthansaApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		323DDA3C1FAB4374004991B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		323DDA3E1FAB4374004991B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		323DDA3F1FAB4374004991B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		323DDA451FAB4374004991B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LufthansaApplication.storyboard; sourceTree = "<group>"; };
+		323DDA481FAB4374004991B0 /* LufthansaApplication.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LufthansaApplication.xcdatamodel; sourceTree = "<group>"; };
+		323DDA4A1FAB4374004991B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		323DDA4D1FAB4374004991B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		323DDA4F1FAB4374004991B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323DDA541FAB4374004991B0 /* LufthansaApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LufthansaApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		323DDA581FAB4374004991B0 /* LufthansaApplicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LufthansaApplicationUITests.m; sourceTree = "<group>"; };
+		323DDA5A1FAB4374004991B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		323DDA661FAB4596004991B0 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		323DDA671FAB4596004991B0 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		323DDA681FAB4596004991B0 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		323DDA691FAB4596004991B0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		323DDA6A1FAB4596004991B0 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		323DDA6B1FAB4596004991B0 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		323DDA6C1FAB4596004991B0 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		323DDA6D1FAB4596004991B0 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		323DDA6E1FAB4596004991B0 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		323DDA6F1FAB4596004991B0 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		323DDA701FAB4596004991B0 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		323DDA711FAB4596004991B0 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		323DDA721FAB4596004991B0 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		323DDA741FAB4596004991B0 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		323DDA751FAB4596004991B0 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		323DDA761FAB4596004991B0 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		323DDA771FAB4596004991B0 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		323DDA781FAB4596004991B0 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		323DDA791FAB4596004991B0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		323DDA7A1FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA7B1FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDA7C1FAB4596004991B0 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA7D1FAB4596004991B0 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDA7E1FAB4596004991B0 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA7F1FAB4596004991B0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA801FAB4596004991B0 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDA811FAB4596004991B0 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA821FAB4596004991B0 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA831FAB4596004991B0 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDA841FAB4596004991B0 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA851FAB4596004991B0 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDA861FAB4596004991B0 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		323DDA871FAB4596004991B0 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		323DDAD11FAC763A004991B0 /* BaseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataManager.h; sourceTree = "<group>"; };
+		323DDAD21FAC763A004991B0 /* BaseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataManager.m; sourceTree = "<group>"; };
+		323DDAD41FAC92E1004991B0 /* CountriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountriesViewController.h; sourceTree = "<group>"; };
+		323DDAD51FAC92E1004991B0 /* CountriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountriesViewController.m; sourceTree = "<group>"; };
+		323DDAD71FAC92F0004991B0 /* CitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
+		323DDAD81FAC92F0004991B0 /* CitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
+		323DDADA1FAC92FF004991B0 /* AirportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirportsViewController.h; sourceTree = "<group>"; };
+		323DDADB1FAC92FF004991B0 /* AirportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirportsViewController.m; sourceTree = "<group>"; };
+		323DDADD1FAC9990004991B0 /* BaseDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataViewController.h; sourceTree = "<group>"; };
+		323DDADE1FAC9990004991B0 /* BaseDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataViewController.m; sourceTree = "<group>"; };
+		323DDB171FAE20E4004991B0 /* ServerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerManager.h; sourceTree = "<group>"; };
+		323DDB181FAE20E4004991B0 /* ServerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerManager.m; sourceTree = "<group>"; };
+		323ECE531FB0AC91007384A7 /* AirportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirportTableViewCell.h; sourceTree = "<group>"; };
+		323ECE541FB0AC91007384A7 /* AirportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirportTableViewCell.m; sourceTree = "<group>"; };
+		323EFB611FB33F2C00F4485E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		323EFB621FB33F2C00F4485E /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		325D4F401FB857550034E108 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6F971AA671F41CE58631C602 /* Pods_LufthansaApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LufthansaApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F357D84651ECADE8BE9B49 /* libPods-LufthansaApplicationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LufthansaApplicationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		323DDA351FAB4374004991B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				325D4F411FB857550034E108 /* CoreData.framework in Frameworks */,
+				93A230BF0C62AAA879541BF5 /* Pods_LufthansaApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323DDA511FAB4374004991B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A98E27374D291923228E4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AFEEABDB97AD4B9439274CF /* Pods-LufthansaApplication.debug.xcconfig */,
+				2904000CEC5FCD7B86BA8C3B /* Pods-LufthansaApplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		323BDDCE1FAF5DDA00938934 /* AccessToken */ = {
+			isa = PBXGroup;
+			children = (
+				323BDDCF1FAF5E1900938934 /* AccessToken.h */,
+				323BDDD01FAF5E1900938934 /* AccessToken.m */,
+			);
+			path = AccessToken;
+			sourceTree = "<group>";
+		};
+		323DDA2F1FAB4374004991B0 = {
+			isa = PBXGroup;
+			children = (
+				323DDA3A1FAB4374004991B0 /* LufthansaApplication */,
+				323DDA391FAB4374004991B0 /* Products */,
+				1A98E27374D291923228E4D1 /* Pods */,
+				325D4F441FB857930034E108 /* Frameworks */,
+				323DDA471FAB4374004991B0 /* LufthansaApplication.xcdatamodeld */,
+				323DDA571FAB4374004991B0 /* LufthansaApplicationUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		323DDA391FAB4374004991B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA381FAB4374004991B0 /* LufthansaApplication.app */,
+				323DDA541FAB4374004991B0 /* LufthansaApplicationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		323DDA3A1FAB4374004991B0 /* LufthansaApplication */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA641FAB4596004991B0 /* Libs */,
+				323BDDCE1FAF5DDA00938934 /* AccessToken */,
+				323DDA971FAB46A7004991B0 /* Managers */,
+				323DDAD01FAB7FA3004991B0 /* Cells */,
+				323DDA981FAB46D4004991B0 /* Controllers */,
+				323DDA991FAB46E8004991B0 /* Models */,
+				323DDA3E1FAB4374004991B0 /* AppDelegate.h */,
+				323DDA3F1FAB4374004991B0 /* AppDelegate.m */,
+				323DDA441FAB4374004991B0 /* LufthansaApplication.storyboard */,
+				323DDA4A1FAB4374004991B0 /* Assets.xcassets */,
+				323DDA4C1FAB4374004991B0 /* LaunchScreen.storyboard */,
+				323DDA4F1FAB4374004991B0 /* Info.plist */,
+				323DDA3B1FAB4374004991B0 /* Supporting Files */,
+			);
+			path = LufthansaApplication;
+			sourceTree = "<group>";
+		};
+		323DDA3B1FAB4374004991B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA3C1FAB4374004991B0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		323DDA571FAB4374004991B0 /* LufthansaApplicationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA581FAB4374004991B0 /* LufthansaApplicationUITests.m */,
+				323DDA5A1FAB4374004991B0 /* Info.plist */,
+			);
+			path = LufthansaApplicationUITests;
+			sourceTree = "<group>";
+		};
+		323DDA641FAB4596004991B0 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA651FAB4596004991B0 /* AFNetworking */,
+				323DDA731FAB4596004991B0 /* UIKit+AFNetworking */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		323DDA651FAB4596004991B0 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA661FAB4596004991B0 /* AFHTTPSessionManager.h */,
+				323DDA671FAB4596004991B0 /* AFHTTPSessionManager.m */,
+				323DDA681FAB4596004991B0 /* AFNetworking.h */,
+				323DDA691FAB4596004991B0 /* AFNetworkReachabilityManager.h */,
+				323DDA6A1FAB4596004991B0 /* AFNetworkReachabilityManager.m */,
+				323DDA6B1FAB4596004991B0 /* AFSecurityPolicy.h */,
+				323DDA6C1FAB4596004991B0 /* AFSecurityPolicy.m */,
+				323DDA6D1FAB4596004991B0 /* AFURLRequestSerialization.h */,
+				323DDA6E1FAB4596004991B0 /* AFURLRequestSerialization.m */,
+				323DDA6F1FAB4596004991B0 /* AFURLResponseSerialization.h */,
+				323DDA701FAB4596004991B0 /* AFURLResponseSerialization.m */,
+				323DDA711FAB4596004991B0 /* AFURLSessionManager.h */,
+				323DDA721FAB4596004991B0 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		323DDA731FAB4596004991B0 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				323DDA741FAB4596004991B0 /* AFAutoPurgingImageCache.h */,
+				323DDA751FAB4596004991B0 /* AFAutoPurgingImageCache.m */,
+				323DDA761FAB4596004991B0 /* AFImageDownloader.h */,
+				323DDA771FAB4596004991B0 /* AFImageDownloader.m */,
+				323DDA781FAB4596004991B0 /* AFNetworkActivityIndicatorManager.h */,
+				323DDA791FAB4596004991B0 /* AFNetworkActivityIndicatorManager.m */,
+				323DDA7A1FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.h */,
+				323DDA7B1FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.m */,
+				323DDA7C1FAB4596004991B0 /* UIButton+AFNetworking.h */,
+				323DDA7D1FAB4596004991B0 /* UIButton+AFNetworking.m */,
+				323DDA7E1FAB4596004991B0 /* UIImage+AFNetworking.h */,
+				323DDA7F1FAB4596004991B0 /* UIImageView+AFNetworking.h */,
+				323DDA801FAB4596004991B0 /* UIImageView+AFNetworking.m */,
+				323DDA811FAB4596004991B0 /* UIKit+AFNetworking.h */,
+				323DDA821FAB4596004991B0 /* UIProgressView+AFNetworking.h */,
+				323DDA831FAB4596004991B0 /* UIProgressView+AFNetworking.m */,
+				323DDA841FAB4596004991B0 /* UIRefreshControl+AFNetworking.h */,
+				323DDA851FAB4596004991B0 /* UIRefreshControl+AFNetworking.m */,
+				323DDA861FAB4596004991B0 /* UIWebView+AFNetworking.h */,
+				323DDA871FAB4596004991B0 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		323DDA971FAB46A7004991B0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				323DDAD11FAC763A004991B0 /* BaseDataManager.h */,
+				323DDAD21FAC763A004991B0 /* BaseDataManager.m */,
+				323DDB171FAE20E4004991B0 /* ServerManager.h */,
+				323DDB181FAE20E4004991B0 /* ServerManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		323DDA981FAB46D4004991B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				323DDADD1FAC9990004991B0 /* BaseDataViewController.h */,
+				323DDADE1FAC9990004991B0 /* BaseDataViewController.m */,
+				323DDADA1FAC92FF004991B0 /* AirportsViewController.h */,
+				323DDADB1FAC92FF004991B0 /* AirportsViewController.m */,
+				323DDAD71FAC92F0004991B0 /* CitiesViewController.h */,
+				323DDAD81FAC92F0004991B0 /* CitiesViewController.m */,
+				323DDAD41FAC92E1004991B0 /* CountriesViewController.h */,
+				323DDAD51FAC92E1004991B0 /* CountriesViewController.m */,
+				323EFB611FB33F2C00F4485E /* MapViewController.h */,
+				323EFB621FB33F2C00F4485E /* MapViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		323DDA991FAB46E8004991B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32023CCB1FBD9EF900A8560C /* Country.h */,
+				32023CCC1FBD9EF900A8560C /* Country.m */,
+				3212ACBF1FB1DB6600E7333E /* CDCountry.h */,
+				3212ACC01FB1DB6600E7333E /* CDCountry.m */,
+				3212ACB51FB1DB6600E7333E /* CDCity.h */,
+				3212ACB61FB1DB6600E7333E /* CDCity.m */,
+				3212ACB71FB1DB6600E7333E /* City.h */,
+				3212ACB81FB1DB6600E7333E /* City.m */,
+				3212ACB91FB1DB6600E7333E /* CDAirport.h */,
+				3212ACBA1FB1DB6600E7333E /* CDAirport.m */,
+				3212ACBB1FB1DB6600E7333E /* Airport.h */,
+				3212ACBC1FB1DB6600E7333E /* Airport.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		323DDAD01FAB7FA3004991B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				323ECE531FB0AC91007384A7 /* AirportTableViewCell.h */,
+				323ECE541FB0AC91007384A7 /* AirportTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		325D4F441FB857930034E108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				325D4F401FB857550034E108 /* CoreData.framework */,
+				B9F357D84651ECADE8BE9B49 /* libPods-LufthansaApplicationUITests.a */,
+				6F971AA671F41CE58631C602 /* Pods_LufthansaApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		323DDA371FAB4374004991B0 /* LufthansaApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323DDA5D1FAB4374004991B0 /* Build configuration list for PBXNativeTarget "LufthansaApplication" */;
+			buildPhases = (
+				400054DA0975AC182F0FE8F7 /* [CP] Check Pods Manifest.lock */,
+				323DDA341FAB4374004991B0 /* Sources */,
+				323DDA351FAB4374004991B0 /* Frameworks */,
+				323DDA361FAB4374004991B0 /* Resources */,
+				64F93045B2ED32E61BA67CAF /* [CP] Embed Pods Frameworks */,
+				92C8306FEA34806BCE2B88E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LufthansaApplication;
+			productName = LufthansaApplication;
+			productReference = 323DDA381FAB4374004991B0 /* LufthansaApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+		323DDA531FAB4374004991B0 /* LufthansaApplicationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 323DDA601FAB4374004991B0 /* Build configuration list for PBXNativeTarget "LufthansaApplicationUITests" */;
+			buildPhases = (
+				323DDA501FAB4374004991B0 /* Sources */,
+				323DDA511FAB4374004991B0 /* Frameworks */,
+				323DDA521FAB4374004991B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				323DDA561FAB4374004991B0 /* PBXTargetDependency */,
+			);
+			name = LufthansaApplicationUITests;
+			productName = LufthansaApplicationUITests;
+			productReference = 323DDA541FAB4374004991B0 /* LufthansaApplicationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		323DDA301FAB4374004991B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Siarhei Kokhan";
+				TargetAttributes = {
+					323DDA371FAB4374004991B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5VP2XARCD7;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					323DDA531FAB4374004991B0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5VP2XARCD7;
+						TestTargetID = 323DDA371FAB4374004991B0;
+					};
+				};
+			};
+			buildConfigurationList = 323DDA331FAB4374004991B0 /* Build configuration list for PBXProject "LufthansaApplication" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 323DDA2F1FAB4374004991B0;
+			productRefGroup = 323DDA391FAB4374004991B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				323DDA371FAB4374004991B0 /* LufthansaApplication */,
+				323DDA531FAB4374004991B0 /* LufthansaApplicationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323DDA361FAB4374004991B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323DDA4E1FAB4374004991B0 /* LaunchScreen.storyboard in Resources */,
+				323DDA4B1FAB4374004991B0 /* Assets.xcassets in Resources */,
+				323DDA461FAB4374004991B0 /* LufthansaApplication.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323DDA521FAB4374004991B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		400054DA0975AC182F0FE8F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LufthansaApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64F93045B2ED32E61BA67CAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LufthansaApplication/Pods-LufthansaApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C8306FEA34806BCE2B88E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LufthansaApplication/Pods-LufthansaApplication-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LufthansaApplication/Pods-LufthansaApplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		323DDA341FAB4374004991B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323EFB631FB33F2C00F4485E /* MapViewController.m in Sources */,
+				323DDB191FAE20E4004991B0 /* ServerManager.m in Sources */,
+				3212ACC31FB1DB6600E7333E /* CDAirport.m in Sources */,
+				323DDAD31FAC763A004991B0 /* BaseDataManager.m in Sources */,
+				323DDA8A1FAB4596004991B0 /* AFSecurityPolicy.m in Sources */,
+				3212ACC41FB1DB6600E7333E /* Airport.m in Sources */,
+				323DDA8C1FAB4596004991B0 /* AFURLResponseSerialization.m in Sources */,
+				323DDADC1FAC92FF004991B0 /* AirportsViewController.m in Sources */,
+				323DDA491FAB4374004991B0 /* LufthansaApplication.xcdatamodeld in Sources */,
+				3212ACC11FB1DB6600E7333E /* CDCity.m in Sources */,
+				323DDA881FAB4596004991B0 /* AFHTTPSessionManager.m in Sources */,
+				323DDA8D1FAB4596004991B0 /* AFURLSessionManager.m in Sources */,
+				323DDA911FAB4596004991B0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				323DDA401FAB4374004991B0 /* AppDelegate.m in Sources */,
+				323DDA941FAB4596004991B0 /* UIProgressView+AFNetworking.m in Sources */,
+				323DDA891FAB4596004991B0 /* AFNetworkReachabilityManager.m in Sources */,
+				323DDAD61FAC92E1004991B0 /* CountriesViewController.m in Sources */,
+				3212ACC61FB1DB6600E7333E /* CDCountry.m in Sources */,
+				3212ACC21FB1DB6600E7333E /* City.m in Sources */,
+				323BDDD11FAF5E1900938934 /* AccessToken.m in Sources */,
+				323DDA3D1FAB4374004991B0 /* main.m in Sources */,
+				323ECE551FB0AC91007384A7 /* AirportTableViewCell.m in Sources */,
+				323DDA901FAB4596004991B0 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				323DDA931FAB4596004991B0 /* UIImageView+AFNetworking.m in Sources */,
+				323DDAD91FAC92F0004991B0 /* CitiesViewController.m in Sources */,
+				323DDA921FAB4596004991B0 /* UIButton+AFNetworking.m in Sources */,
+				323DDA951FAB4596004991B0 /* UIRefreshControl+AFNetworking.m in Sources */,
+				323DDA961FAB4596004991B0 /* UIWebView+AFNetworking.m in Sources */,
+				323DDA8B1FAB4596004991B0 /* AFURLRequestSerialization.m in Sources */,
+				32023CCD1FBD9EF900A8560C /* Country.m in Sources */,
+				323DDA8E1FAB4596004991B0 /* AFAutoPurgingImageCache.m in Sources */,
+				323DDA8F1FAB4596004991B0 /* AFImageDownloader.m in Sources */,
+				323DDADF1FAC9990004991B0 /* BaseDataViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		323DDA501FAB4374004991B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				323DDA591FAB4374004991B0 /* LufthansaApplicationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		323DDA561FAB4374004991B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 323DDA371FAB4374004991B0 /* LufthansaApplication */;
+			targetProxy = 323DDA551FAB4374004991B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		323DDA441FAB4374004991B0 /* LufthansaApplication.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323DDA451FAB4374004991B0 /* Base */,
+			);
+			name = LufthansaApplication.storyboard;
+			sourceTree = "<group>";
+		};
+		323DDA4C1FAB4374004991B0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				323DDA4D1FAB4374004991B0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		323DDA5B1FAB4374004991B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		323DDA5C1FAB4374004991B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		323DDA5E1FAB4374004991B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AFEEABDB97AD4B9439274CF /* Pods-LufthansaApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LufthansaApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skokhan.LufthansaApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		323DDA5F1FAB4374004991B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2904000CEC5FCD7B86BA8C3B /* Pods-LufthansaApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LufthansaApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skokhan.LufthansaApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		323DDA611FAB4374004991B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LufthansaApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skokhan.LufthansaApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LufthansaApplication;
+			};
+			name = Debug;
+		};
+		323DDA621FAB4374004991B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LufthansaApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skokhan.LufthansaApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LufthansaApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		323DDA331FAB4374004991B0 /* Build configuration list for PBXProject "LufthansaApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323DDA5B1FAB4374004991B0 /* Debug */,
+				323DDA5C1FAB4374004991B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323DDA5D1FAB4374004991B0 /* Build configuration list for PBXNativeTarget "LufthansaApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323DDA5E1FAB4374004991B0 /* Debug */,
+				323DDA5F1FAB4374004991B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		323DDA601FAB4374004991B0 /* Build configuration list for PBXNativeTarget "LufthansaApplicationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323DDA611FAB4374004991B0 /* Debug */,
+				323DDA621FAB4374004991B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		323DDA471FAB4374004991B0 /* LufthansaApplication.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				323DDA481FAB4374004991B0 /* LufthansaApplication.xcdatamodel */,
+			);
+			currentVersion = 323DDA481FAB4374004991B0 /* LufthansaApplication.xcdatamodel */;
+			name = LufthansaApplication.xcdatamodeld;
+			path = LufthansaApplication/LufthansaApplication.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 323DDA301FAB4374004991B0 /* Project object */;
+}
