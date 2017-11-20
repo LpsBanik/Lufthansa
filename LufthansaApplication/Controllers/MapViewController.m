@@ -26,8 +26,6 @@ GMSMapView* mapView;
 GMSMarker* marker;
 BOOL locationUpdate;
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
    
@@ -37,7 +35,6 @@ BOOL locationUpdate;
                                               zoom:8];
     mapView.myLocationEnabled = YES;
 
-    
     mapView = [GMSMapView mapWithFrame:CGRectZero camera:camera];
     mapView.settings.compassButton = YES;
     mapView.settings.myLocationButton = YES;
@@ -56,6 +53,7 @@ BOOL locationUpdate;
     });
 }
 
+//с этим методом мне помог ДИМА
 -(void) showNearestAirportsWithLatitude:(double)latitude
                               longitude:(double)longitude {
     
@@ -96,6 +94,7 @@ BOOL locationUpdate;
     }
 }
 
+//с этим методом мне помог ДИМА
 - (void) observeValueForKeyPath:(NSString *)keyPath
                        ofObject:(id)object
                          change:(NSDictionary *)change

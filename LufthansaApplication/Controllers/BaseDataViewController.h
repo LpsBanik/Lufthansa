@@ -21,5 +21,4 @@
 //-(void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 - (void)configureCell:(UITableViewCell *)cell withObject:(NSManagedObject *)object;
 
-
 @end

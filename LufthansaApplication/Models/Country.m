@@ -18,8 +18,6 @@
         self.countryName = [[[responseObject objectForKey:@"Names"]
                              objectForKey:@"Name"]
                             objectForKey:@"$"];
-        
-        
     }
     return self;
 }

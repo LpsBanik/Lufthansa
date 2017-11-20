@@ -37,15 +37,13 @@
         
         Country* country = (Country*)object;
         CDCountry* countryCoreData =
-        [NSEntityDescription
-         insertNewObjectForEntityForName:@"CDCountry"
-                  inManagedObjectContext:self.managedObjectContext];
+        [NSEntityDescription insertNewObjectForEntityForName:@"CDCountry"
+                                      inManagedObjectContext:self.managedObjectContext];
         countryCoreData.countryName = country.countryName;
         countryCoreData.countryCode = country.countryCode;
         
         NSLog(@"COUNTRY = %@, CODE = %@", country.countryName, country.countryCode);
         return;
-        
     }
      //проверка - если это город, то создаем город с соответствующими ему свойствами- entity
     if([object isKindOfClass:[City class]]){
@@ -54,14 +52,11 @@
         CDCity* cityCoreData =
         [NSEntityDescription insertNewObjectForEntityForName:@"CDCity"
                                       inManagedObjectContext:self.managedObjectContext];
-        
         cityCoreData.cityName = city.cityName; // добавляет имя города на вьюшку City
         cityCoreData.cityCode = city.cityCode;
         
         NSLog(@"CITY = %@, CODE = %@", city.cityName, city.cityCode);
-        
         return;
-        
     }
      //проверка - если это аэропорт, то создаем его с соответствующими ему свойствами- entity
     if([object isKindOfClass:[Airport class]]){
@@ -74,12 +69,11 @@
         airportCoreData.airportName = airport.airportName;
         airportCoreData.airportCode = airport.airportCode;
         airportCoreData.countryCode = airport.countryCode;
-        airportCoreData.cityCode = airport.cityCode;
-        airportCoreData.latitude = airport.latitude;
-        airportCoreData.longitude = airport.longitude;
+        airportCoreData.cityCode =    airport.cityCode;
+        airportCoreData.latitude =    airport.latitude;
+        airportCoreData.longitude =   airport.longitude;
         
         NSLog(@"AIRPORTS = %@, CODE = %@, countryCode = %@, cityCode = %@, latitude =%f, longitude = %f", airport.airportName, airport.airportCode, airport.countryCode, airport.cityCode, airport.latitude, airport.longitude);
-        
         return;
     }
 }
@@ -130,7 +124,6 @@
      } onFailure:^(NSError *error, NSInteger statusCode) {
          NSLog(@"error = %@ , code = %ld" , [error localizedDescription] ,(long)statusCode);
      }];
-    
 }
 
 -(void) insertAirportsWithOffset:(NSInteger)offset
@@ -169,7 +162,6 @@
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-    
     //а если не установлено, то мы его инициализируем
     //до конца приложения у нас будет существовать 1 контекст, 1 координатор и 1 обжектмодел
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
@@ -226,11 +218,11 @@
     [request setEntity:description];
     
     NSError* requestError = nil;
-    NSArray* resultArray = [self.managedObjectContext executeFetchRequest:request error:&requestError];
+    NSArray* resultArray = [self.managedObjectContext executeFetchRequest:request
+                                                                    error:&requestError];
     if (requestError) {
         NSLog(@"%@", [requestError localizedDescription]);
     }
-    
     return resultArray;
 }
 
